@@ -1,0 +1,86 @@
+1. General Commands and Creating a Local Repository
+
+> git status - shows the status of current files (used to check the status usuallly after adding to local repository)
+	-Untracked Files : Red
+	-Tracked Files: Green
+
+> git log - to check all commits made, gives hash values of previous commits
+
+> git diff - difference between modified file and previously commit file
+
+> git checkout <filename> - rollback to previous commit
+
+> git revert <hash value of previous commits> - reverts the previos commit and deletes the files
+
+> git rm --cached -r . - removes all files from the staging area
+
+> git rm --cached -r folder - removes a folder
+
+> git fetch <remote name> <branch name(if necessary)> - downloads commits, files, and refs from a remote repository into your local repoitory
+
+> git pull <remote name> - used to update the local version of a repository from a remote (note: after pull you can merge by putting branch name)
+
+> git config --global user.email "dhirenrajeshk@gmail.com" - used to sync your email id
+
+> git reset - undo git add
+
+-----------------------------------------------------------------xxxxxxxxxxxxxxxxxxxx-------------------------------------------------------------------
+
+2. Creating a Local Repository
+
+> git init - initializes a git repository in working directory
+
+> git add <filename> - adds current file to the staging area
+
+> git add . - adds all files(with changes) to staging area
+
+> git commit -m "message" - commits the files to the local repository
+
+-----------------------------------------------------------------xxxxxxxxxxxxxxxxxxxx-------------------------------------------------------------------
+
+2. Commands necessary to create a Remote Repository
+
+> git remote add <name: preferred 'origin'(name refers to the name given to remote repo)> <repo-link> - adding a remote repository
+
+> git push -u <name: preferred 'origin'(needs to be same name as above)> <branchname> - pushing into remote repository
+
+-----------------------------------------------------------------xxxxxxxxxxxxxxxxxxxx-------------------------------------------------------------------
+
+3. Gitignore
+
+Use gitignore to specify the files that should be ignored
+
+-----------------------------------------------------------------xxxxxxxxxxxxxxxxxxxx-------------------------------------------------------------------
+
+4. Cloning
+
+> git clone <repo-link> - clone repo to local directory
+
+note ~ on 'git log' we should be able to see the previous commits
+
+-----------------------------------------------------------------xxxxxxxxxxxxxxxxxxxx-------------------------------------------------------------------
+
+5. Branching and Merging
+
+BRANCHING:
+
+> git branch <branch-name> - initialize a branch name
+
+> git branch - gives back the branches present
+
+> git checkout <branch-name> - used to switch branches
+
+
+MERGING:
+
+> git merge <branch-name> - merges branches to the main(or master) branch
+
+note ~ :q! - used to save and quit after merge
+
+-----------------------------------------------------------------xxxxxxxxxxxxxxxxxxxx-------------------------------------------------------------------
+
+6. Forking and Pull Requests
+
+Use the website for the following functionalities
+
+-----------------------------------------------------------------xxxxxxxxxxxxxxxxxxxx-------------------------------------------------------------------
