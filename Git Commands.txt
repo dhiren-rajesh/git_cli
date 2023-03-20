@@ -84,3 +84,13 @@ note ~ :q! - used to save and quit after merge
 Use the website for the following functionalities
 
 -----------------------------------------------------------------xxxxxxxxxxxxxxxxxxxx-------------------------------------------------------------------
+
+7. For Main and Master conflicts
+
+> git checkout master - navigates to the master branch
+
+> git branch main master -f - changing the name of the master branch to main
+
+> git checkout main - navigates to the main branch
+
+> git push origin main -f - pushing into the main branch
